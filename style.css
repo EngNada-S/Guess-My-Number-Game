@@ -117,3 +117,94 @@ h1 {
 .label-score {
   margin-bottom: 2rem;
 }
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 991px) {
+  main {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .left,
+  .right {
+    width: 85%;
+    text-align: center;
+  }
+
+  .left {
+    margin-top: 25px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 2.6rem;
+  }
+
+  .number {
+    font-size: 4.5rem;
+    width: 10rem;
+    padding: 1.5rem 0;
+  }
+
+  .guess {
+    font-size: 3.5rem;
+    width: 18rem;
+    padding: 1.5rem;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  header {
+    height: 25vh;
+  }
+
+  main {
+    height: 75vh;
+    padding: 1rem;
+    justify-content: space-evenly;
+  }
+
+  h1 {
+    font-size: 2.1rem;
+    top: 60%;
+  }
+
+  .between {
+    font-size: 1rem;
+  }
+
+  .left {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .number {
+    font-size: 3rem;
+    width: 10rem;
+    padding: 2.5rem 0;
+  }
+
+  .guess {
+    font-size: 2.2rem;
+    width: 16rem;
+    padding: 2rem;
+  }
+
+  .btn {
+    font-size: 1.8rem;
+    padding: 1.5rem;
+  }
+
+  .message {
+    margin-bottom: 3rem;
+    font-size: 2rem;
+  }
+
+  .label-score,
+  .label-highscore {
+    font-size: 1.4rem;
+  }
+}
