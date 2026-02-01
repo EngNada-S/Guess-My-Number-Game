@@ -26,7 +26,7 @@ header {
 }
 
 main {
-  height: 65vh;
+  min-height: 65vh;
   color: #eee;
   display: flex;
   align-items: center;
@@ -67,6 +67,7 @@ h1 {
   bottom: 0;
   left: 50%;
   transform: translate(-50%, 50%);
+  transition: 0.3s;
 }
 
 .between {
@@ -139,13 +140,12 @@ h1 {
   }
 
   h1 {
-    font-size: 2.6rem;
+    font-size: 2.5rem;
   }
 
   .number {
     font-size: 4.5rem;
-    width: 10rem;
-    padding: 1.5rem 0;
+    padding: 2rem 0;
   }
 
   .guess {
@@ -158,18 +158,17 @@ h1 {
 
 @media (max-width: 767px) {
   header {
-    height: 25vh;
+    height: 30vh;
   }
 
   main {
-    height: 75vh;
     padding: 1rem;
+    height: 70vh;
     justify-content: space-evenly;
   }
 
   h1 {
-    font-size: 2.1rem;
-    top: 60%;
+    font-size: 2rem;
   }
 
   .between {
@@ -183,24 +182,21 @@ h1 {
 
   .number {
     font-size: 3rem;
-    width: 10rem;
-    padding: 2.5rem 0;
   }
 
   .guess {
     font-size: 2.2rem;
-    width: 16rem;
     padding: 2rem;
   }
 
   .btn {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     padding: 1.5rem;
   }
 
   .message {
     margin-bottom: 3rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .label-score,
